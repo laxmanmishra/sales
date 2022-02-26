@@ -80,6 +80,25 @@
                 </ul>
             </li>
 
+
+            <!-- 26-02-2022 -->
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link  nav-dropdown-toggle">
+                    <i class="fas fa-users nav-icon"></i>
+                    EMS
+                </a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a href="{{ route("admin.enquiry.index") }}" class="nav-link {{ request()->is('admin/enquiry') || request()->is('admin/enquiry/*') ? 'active' : '' }}">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            Enquerys Followup
+                        </a> 
+                    </li>
+                </ul>
+            </li>
+            <!-- 26-02-2022 -->
+
+
             <li class="nav-item">
                 <a href="{{ route("admin.products.index") }}" class="nav-link {{ request()->is('admin/products') || request()->is('admin/products/*') ? 'active' : '' }}">
                     <i class="fas fa-cogs nav-icon">
