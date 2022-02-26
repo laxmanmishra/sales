@@ -1,17 +1,8 @@
 @extends('layouts.admin')
 @section('content')
-@can('product_create')
-    <div style="margin-bottom: 10px;" class="row">
-        <div class="col-lg-12">
-            <a class="btn btn-success" href="{{ route("admin.products.create") }}">
-                {{ trans('global.add') }} {{ trans('global.product.title_singular') }}
-            </a>
-        </div>
-    </div>
-@endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('global.product.title_singular') }} {{ trans('global.list') }}
+        Enquiry Update & Followup
     </div>
 
 
@@ -174,6 +165,117 @@
                 		<td><a href="#" class="btn btn-primary">Edit</a></td>
                 		<td>Village Data</td>
                 	</tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Chandrabhan Chandrakar</td>
+                        <td><input type="number" name="" value="9999999999" placeholder="9999999999"></td>
+                        <td>Shkhatal (Bemetara)</td>
+                        <td>09-Dec-2021</td>
+                        <td>
+                            <select>
+                                <option>9-Fab-2021</option>
+                                <option>10-Fab-2021</option>
+                                <option>11-Fab-2021</option>
+                            </select>
+                        </td>
+                        <td>4</td>
+                        <td>Hot</td>
+                        <td>0</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><textarea style="min-height: 50px;"></textarea></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option>select</option>
+                                <option>one</option>
+                                <option>two</option>
+                                <option>three</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>select</option>
+                                <option>one</option>
+                                <option>two</option>
+                                <option>three</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Next Plan</option>
+                                <option>one</option>
+                                <option>two</option>
+                                <option>three</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Next Plan Date</option>
+                                <option>19-Fab-2021</option>
+                                <option>19-Fab-2021</option>
+                                <option>18-Fab-2021</option>
+                            </select>
+                        </td>
+                        <td><a href="#" class="btn btn-primary">Edit</a></td>
+                        <td>Village Data</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Chandrabhan Chandrakar</td>
+                        <td><input type="number" name="" value="9999999999" placeholder="9999999999"></td>
+                        <td>Shkhatal (Bemetara)</td>
+                        <td>09-Dec-2021</td>
+                        <td>
+                            <select>
+                                <option>9-Fab-2021</option>
+                                <option>10-Fab-2021</option>
+                                <option>11-Fab-2021</option>
+                            </select>
+                        </td>
+                        <td>4</td>
+                        <td>Hot</td>
+                        <td>0</td>
+                        <td><input type="checkbox" name=""></td>
+                        <td><textarea style="min-height: 50px;"></textarea></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <select>
+                                <option>select</option>
+                                <option>one</option>
+                                <option>two</option>
+                                <option>three</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>select</option>
+                                <option>one</option>
+                                <option>two</option>
+                                <option>three</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Next Plan</option>
+                                <option>one</option>
+                                <option>two</option>
+                                <option>three</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select>
+                                <option>Next Plan Date</option>
+                                <option>19-Fab-2021</option>
+                                <option>19-Fab-2021</option>
+                                <option>18-Fab-2021</option>
+                            </select>
+                        </td>
+                        <td><a href="#" class="btn btn-primary">Edit</a></td>
+                        <td>Village Data</td>
+                    </tr>
 
                     @foreach($enquiries as $key => $product)
                         <tr data-entry-id="{{ $product->id }}">
