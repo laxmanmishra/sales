@@ -3,17 +3,15 @@
 @can('product_create')
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
-            <h2>Enquiry Update & Followup</h2>
-            <!-- <a class="btn btn-success" href="{{ route("admin.products.create") }}">
+            <a class="btn btn-success" href="{{ route("admin.products.create") }}">
                 {{ trans('global.add') }} {{ trans('global.product.title_singular') }}
-            </a> -->
+            </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        <!-- {{ trans('global.product.title_singular') }} {{ trans('global.list') }} -->
-        Enquiry Update & Followup
+        {{ trans('global.product.title_singular') }} {{ trans('global.list') }}
     </div>
 
 
@@ -46,21 +44,23 @@
 	    	</div>
 	    </div>
 
+	    <hr>
+
 	    <div class="card p-4">
 	    	<form class="form-row">			  
-			    <div class="form-group col-md-3">
+			    <div class="form-group col-md-6">
 			      <label >Prospect Name</label>
 			      <input type="text" class="form-control" placeholder="">
 			    </div>
-			    <div class="form-group col-md-3">
+			    <div class="form-group col-md-6">
 			      <label >Father Name</label>
 			      <input type="email" class="form-control" placeholder="">
 			    </div>
-			    <div class="form-group col-md-3">
+			    <div class="form-group col-md-6">
 			      <label >Enquiry Date</label>
 			      <input type="email" class="form-control" placeholder="">
 			    </div>
-			    <div class="form-group col-md-3">
+			    <div class="form-group col-md-6">
 			      <label >Contact No.</label>
 			      <input type="email" class="form-control" placeholder="">
 			    </div>
@@ -71,22 +71,15 @@
 			</form>
 	    </div>
 	    <div class="card p-4">
-            <div class="row">
-                <div class="col-md-4">
-        	    	<h3>Upload Priority Leads</h3>
-        	    	<input type="file" name="" class="form-control" style="height: 42px;">
-        			  <button type="submit" class="btn btn-primary mt-2 mr-2">Upload</button>
-                    
-                </div>
-                <div class="col-md-8">
-        		    <div class=" p-4">
-        		    	<label class="d-inline"><input type="radio" id="html" name="fav" > Priority Leads</label>
-        			  	<label class="d-inline"><input type="radio" id="css" name="fav" > Other Leads</label>
-        			  	<label class="d-inline"><input type="radio" id="javascript" name="fav" > Secondary Leads</label>
-        		    </div>                    
-                </div>
-            </div>
+	    	<h3>Upload Priority Leads</h3>
+	    	<input type="file" name="" class="form-control" style="height: 42px;">
+			  <button type="submit" class="btn btn-primary mt-2 mr-2">Upload</button>
 
+		    <div class=" p-4">
+		    	<label class="d-inline"><input type="radio" id="html" name="fav" > Priority Leads</label>
+			  	<label class="d-inline"><input type="radio" id="css" name="fav" > Other Leads</label>
+			  	<label class="d-inline"><input type="radio" id="javascript" name="fav" > Secondary Leads</label>
+		    </div>
 	    </div>
 
         <div class="table-responsive">
