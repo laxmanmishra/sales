@@ -94,6 +94,24 @@
                             Enquerys Followup
                         </a> 
                     </li>
+                    <li class="nav-item">
+                        <a href="{{ route("admin.enquiry1.index") }}" class="nav-link {{ request()->is('admin/enquiry1') || request()->is('admin/enquiry2/*') ? 'active' : '' }}">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            New Enquiry
+                        </a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("admin.enquiry2.index") }}" class="nav-link {{ request()->is('admin/enquiry2') || request()->is('admin/enquiry2/*') ? 'active' : '' }}">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            Enquiry List
+                        </a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route("admin.enquiry3.index") }}" class="nav-link {{ request()->is('admin/enquiry3') || request()->is('admin/enquiry3/*') ? 'active' : '' }}">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            Search Enquiry
+                        </a> 
+                    </li>
                 </ul>
             </li>
             <!-- 26-02-2022 -->

@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Enquiry;
 
-class EnquiryController extends Controller
+class Enquiry3Controller extends Controller
 {
     public function index()
     {
 
         $enquiries = Enquiry::all();
 
-        return view('admin.enquiries.index', compact('enquiries'));
+        return view('admin.enquiries.index3', compact('enquiries'));
     }
 
 

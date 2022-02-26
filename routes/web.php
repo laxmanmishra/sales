@@ -18,6 +18,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::resource('roles', 'RolesController');
 
     Route::resource('enquiry', 'EnquiryController');
+    Route::resource('enquiry1', 'Enquiry1Controller');
+    Route::resource('enquiry2', 'Enquiry2Controller');
+    Route::resource('enquiry3', 'Enquiry3Controller');
 
 
     Route::delete('users/destroy', 'UsersController@massDestroy')->name('users.massDestroy');
